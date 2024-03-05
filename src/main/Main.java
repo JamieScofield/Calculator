@@ -1,5 +1,10 @@
+package main;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Calculator calculator = new Calculator();
+        UserInputController controller = new UserInputController(calculator);
+        controller.run();
+
     }
 }
